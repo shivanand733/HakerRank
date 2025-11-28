@@ -37,6 +37,7 @@ public class Student {
 		} else 
 			return'D';
 	}
+
 	
 	
 	 public void displayDetails() {
