@@ -5,8 +5,9 @@ import java.util.Scanner;
 public class sum {
 	
 	public static void main(String[] args) {
-		sum();
-		sum();
+		for (int i = 0; i <= 5; i++) {
+			sum();
+		}
 	}
 	
 	static void sum() {
