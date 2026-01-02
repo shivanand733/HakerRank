@@ -25,13 +25,37 @@ public class solution {
 		}
 	}
 	
+	
+	//Find the power of the two 
+	public boolean powerOfTwo(int n) {
+		if (n < 1) {
+			return false;	
+		} else if(n == 1) {
+			return true;
+		} else  {
+			while ( n%2 == 0) {
+				n = n /2;
+			}
+			
+			if (n == 1) {
+				return true;
+				
+			} else {
+				return false;
+			}
+		}
+	}
+	
 	public static void main(String[] args) {
 		Scanner scan = new Scanner(System.in);
 		solution so = new solution();
-		System.out.println("Enter Number");
+		System.out.println("Enter Number x value ");
 		int x = scan.nextInt();
+		System.out.println("Enter Number n value ");
+		int n = scan.nextInt();
 		
 		System.out.println("Given Number is Palindrome " + so.isPalindrome(x));
+		System.out.println("the square of the number is " + so.powerOfTwo(n));
 	}
 	
 }
