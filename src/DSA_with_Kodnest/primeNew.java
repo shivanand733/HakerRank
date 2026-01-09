@@ -4,23 +4,16 @@ import java.util.Scanner;
 
 public class primeNew {
 	public static void main(String[] args) {
-		
 		Scanner scan = new Scanner(System.in);
 		System.out.println("Enter Number");
-		int number =scan.nextInt();		//take number
-		int fact = 0;
-		int n = 0;
-		for (int i =1; i <= number; i++) {
-			if (number%i == 0) {
-				System.out.println(i);
-				fact++;
+		int number = scan.nextInt();
+		int count = 0;
+		while (count < number) {
+			for (int i = 1; i <= number; i++) {
+				if (number%i == 0) {
+					count++;
+				}
 			}
-		}
-		System.out.println();
-		if(fact == 2) {
-			System.out.println(number +" is prime number");
-		} else {
-			System.out.println(number + " is not a prime number");
 		}
 	}
 }
