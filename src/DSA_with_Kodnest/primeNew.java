@@ -3,24 +3,24 @@ package DSA_with_Kodnest;
 import java.util.Scanner;
 
 public class primeNew {
-public static void main(String[] args) {
-	
-	Scanner scan = new Scanner(System.in);
-	System.out.println("Enter Number");
-	int number = scan.nextInt();
-	int n = number;
-	
-	int count = 0;
-	int num = 2; 
-	
-	System.out.println("First " + n + " prime number are " );
-	
-	while (count > number) {
-		for (int i = 2; i <=Math.sqrt(n); i++) {
-			if (num % i == 0) {
-				
+	public static void main(String[] args) {
+		
+		Scanner scan = new Scanner(System.in);
+		System.out.println("Enter Number");
+		int number =scan.nextInt();		//take number
+		int fact = 0;
+		int n = 0;
+		for (int i =1; i <= number; i++) {
+			if (number%i == 0) {
+				System.out.println(i);
+				fact++;
 			}
 		}
+		System.out.println();
+		if(fact == 2) {
+			System.out.println(number +" is prime number");
+		} else {
+			System.out.println(number + " is not a prime number");
+		}
 	}
-}
 }

@@ -18,7 +18,7 @@ public static void main(String[] args) {
 	}
 	System.out.println();
 	if (fact == 2) {
-		System.out.println(number + " is prime number");
+		System.out.println(number + " is prime numbers are ");
 	} else {
 		System.out.println(number + " is not prime number");
 	}
