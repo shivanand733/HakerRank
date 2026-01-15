@@ -1,5 +1,6 @@
 package DSA_with_Kunal;
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class ShivArray {
@@ -14,22 +15,7 @@ public static void main(String[] args) {
 		arry[i] = scan.nextInt();
 	}
 	
-	System.out.println("The Arrys are ");
-	System.out.print("[");
-//	for (int i = 0; i < arry.length; i++) {
-//		System.out.print(arry[i]);
-//	
-//		if (i != arry.length -1) {
-//			System.out.print(",");
-//		}
-// 	} 
-	
-	for (int num : arry) {
-		System.out.print(num + " ");
-	}
-	System.out.println("]");
-
-	
+	System.out.println(Arrays.toString(arry));
 	
 }
 }
