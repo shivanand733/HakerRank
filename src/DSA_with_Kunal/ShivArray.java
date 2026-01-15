@@ -16,13 +16,17 @@ public static void main(String[] args) {
 	
 	System.out.println("The Arrys are ");
 	System.out.print("[");
-	for (int i = 0; i < arry.length; i++) {
-		System.out.print(arry[i]);
+//	for (int i = 0; i < arry.length; i++) {
+//		System.out.print(arry[i]);
+//	
+//		if (i != arry.length -1) {
+//			System.out.print(",");
+//		}
+// 	} 
 	
-		if (i != arry.length -1) {
-			System.out.print(",");
-		}
- 	} 
+	for (int num : arry) {
+		System.out.print(num + " ");
+	}
 	System.out.println("]");
 
 	
