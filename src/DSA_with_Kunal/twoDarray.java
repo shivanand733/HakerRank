@@ -19,9 +19,17 @@ public static void main(String[] args) {
 		arry[i] = new int[cols];
 		
 		for (int j = 0; j < cols; j++) {
-			System.out.println("Enter elements [ " + i + " ] [ " + j  + " ] : ");
+			System.out.println("Enter elements [ " + i + " ] [ " + j  + " ] : "); 
+			arry[i][j] =scan.nextInt();
 		}
 	}
 
+	for (int i = 0; i < arry.length;i++) {
+		for (int j = 0; j < arry[i].length;j++) {
+			System.out.println(arry[i][j] + "  ");
+		}
+		System.out.println();
+		
+	}
 }
 }
