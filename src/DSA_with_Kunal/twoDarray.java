@@ -17,6 +17,10 @@ public static void main(String[] args) {
 		int cols = scan.nextInt();
 		
 		arry[i] = new int[cols];
+		
+		for (int j = 0; j < cols; j++) {
+			System.out.println("Enter elements [ " + i + " ] [ " + j  + " ] : ");
+		}
 	}
 
 }
