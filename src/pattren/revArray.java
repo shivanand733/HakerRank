@@ -16,9 +16,11 @@ public class revArray {
         }
 
         System.out.println("Array elements are:");
-        for (int i = 0; i < arry.length; i++) {
-            System.out.print(arry[i] + " ");
-        }
+//        for (int i = 0; i < arry.length; i++) {
+//            System.out.print(arry[i] + " ");
+//        }
+        
+        System.out.println(Arrays.toString(arry));//use the inbulid function " Arrays.toString(); "
 
 //        System.out.println("\nReversed array:");
 //        for (int i = arry.length - 1; i >= 0; i--) {
